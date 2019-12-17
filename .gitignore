@@ -1,0 +1,5 @@
+conda/
+json/
+.nextflow*
+work/
+__pycache__
