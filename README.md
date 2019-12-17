@@ -51,7 +51,7 @@ Launching `main.nf` [clever_snyder] - revision: 02edc0e59b
 
 Each Nextflow process will create a small `communicator.json` file in its working directory containing custom information saved with the `record.py` script (`bin/record.py`).
 
-Meanwhile, Nextflow's http web-log functionality will send POST messages to the Flask server, where the messages will be parsed and the `communicator.json` files will be detected, allowing the data to be loaded and combined with the standard Nextflow task 'trace' metadata:
+Meanwhile, [Nextflow's http web-log functionality](https://www.nextflow.io/docs/latest/tracing.html#weblog-via-http) will send POST messages to the Flask server, where the messages will be parsed and the `communicator.json` files will be detected, allowing the data to be loaded and combined with the standard Nextflow task 'trace' metadata:
 
 ```
 
